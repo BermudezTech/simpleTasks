@@ -1,18 +1,25 @@
+<?php
+ob_start();
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Mi horario</title>
 	<link rel="stylesheet" href="styles2.css">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
+
 <body>
 	<div class="container" style="
 		grid-template-columns: auto;
 		grid-template-rows: 60px auto;
 		grid-template-areas: 'header''main';
 	">
-	<?php include 'header.php' ?>
+		<?php include 'header.php' ?>
 		<div class="main" style="overflow: auto; ">
 			<table style="margin-right: 10px;">
 				<tr>
@@ -54,21 +61,26 @@
 			</table>
 			<div class="espacio" style="visibility: hidden;">a</div>
 			<style>
-				table{
+				table {
 					width: 100%;
 					border: 2px solid #000;
 					border-collapse: collapse;
 					font-size: 13px;
 				}
-				tr, th, td{
+
+				tr,
+				th,
+				td {
 					border: 1px solid #000;
 					text-align: center;
 				}
-				.main{
+
+				.main {
 					display: flex;
 				}
 			</style>
 		</div>
 	</div>
 </body>
+
 </html>

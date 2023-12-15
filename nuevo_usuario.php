@@ -1,4 +1,8 @@
-<?php 
+<?php
+ob_start();
+session_start();
+?>
+<?php
 
 include 'conexion.php';
 
@@ -12,4 +16,4 @@ $st -> execute();
 header('location: inicio.php');
 
 
- ?>
+?>
